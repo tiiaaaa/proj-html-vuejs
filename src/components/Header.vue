@@ -22,6 +22,7 @@ export default {
 <style lang='scss'>
     
     header{
+        position: sticky;
         background-color: black;
     }
 
