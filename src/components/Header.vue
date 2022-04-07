@@ -22,8 +22,9 @@ export default {
 <style lang='scss'>
     
     header{
+        min-width: 960px;
         position: relative;
-        background-color: black;
+        background-color: #1b1b1b;
     }
 
 </style>

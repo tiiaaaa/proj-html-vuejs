@@ -87,6 +87,7 @@ export default {
     
     nav.container{
         height: 15vh;
+        min-width: 960px;
         position: sticky;
         top: 0;
         z-index: 2;
