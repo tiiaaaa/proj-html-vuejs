@@ -1,8 +1,8 @@
 <template>
     <nav class="container">
-        <section class="row align-items-center text-white py-3">
+        <section class="row align-items-center text-white text-center py-3">
             <div class="col-3">
-                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn-danger rounded-0 btn-sm py-1 px-4 text-uppercase">order online</button>
             </div>
 
             <div class="col-6">
@@ -69,7 +69,16 @@
 
 <script>
 export default {
-    name: 'HeaderNav'
+    name: 'HeaderNav',
+    data: function(){
+        return{
+            navList: [
+                {
+                    svg: '@/assets/svg/svg-0.svg',
+                }
+            ]
+        }
+    }
 
 }
 </script>
@@ -77,16 +86,23 @@ export default {
 <style lang='scss' scoped>
     
     nav.container{
-        // height: 15vh;
+        height: 15vh;
+        position: sticky;
+        top: 0;
+        z-index: 2;
 
         section.row{
             // height: 100%;
+
+            button{
+                font-size: .7rem;
+            }
 
             li{
             list-style-type: none;
 
                 a{
-                    font-size: .8rem
+                    font-size: .7rem
                 }
 
                 img{
