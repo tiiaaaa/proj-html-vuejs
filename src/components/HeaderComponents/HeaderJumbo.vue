@@ -1,6 +1,6 @@
 <template>
-    <section class="row py-3">
-        <div id="header-jumbo" class="col-12 text-center position-relative">
+    <section class="row">
+        <div id="header-jumbo" class="col-12 text-center position-relative py-4">
             <img src="@/assets/img/h3-rev-img-6.png" alt="">
 
             <div class="circle-btn rounded-circle text-danger position-absolute text-uppercase p-2">
@@ -20,6 +20,7 @@ export default {
 <style lang='scss' scoped>
     div#header-jumbo{
         height: 50vh;
+        margin-top: 15vh;
         background-image: url('@/assets/img/h3-rev-img-5.png');
         background-size: 600px;
         background-position: center;

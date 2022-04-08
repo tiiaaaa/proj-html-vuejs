@@ -1,70 +1,80 @@
 <template>
     <nav class="container">
-        <section class="row align-items-center text-white text-center py-3">
-            <!-- Bottone Rosso sulla sinistra -->
-            <div class="col-3">
-                <button type="button" class="btn-danger rounded-0 btn-sm py-1 px-4 text-uppercase">order online</button>
-            </div>
-            
-            <!-- Lista di link centrale con img-logo -->
-            <div class="col-6">
-                <div>
-                    <ul class="d-flex justify-content-evenly mb-0 p-0">
-                        <li class="d-flex align-items-center">
-                            <a class="text-uppercase text-white text-decoration-none" href="#">
-                                home
+        <section class="row py-2">
+            <div class="nav-left col-5 d-flex align-items-center justify-content-between">
+                <div class="button">
+                    <button class="btn btn-danger rounded-0 px-4">Warning</button>
+                </div>
+
+                <div class="list">
+                    <ul class="d-flex align-items-center mb-0 p-0">
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <img class="header-svg" src="@/assets/svg/svg-0.svg" alt="">
+                                <span>home</span>
                             </a>
                         </li>
 
-                        <li class="d-flex align-items-center">
-                            <a class="text-uppercase text-white text-decoration-none" href="#">
-                                home
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <span>home</span>
                             </a>
                         </li>
 
-                        <li class="d-flex align-items-center">
-                            <a class="text-uppercase text-white text-decoration-none" href="#">
-                                home
-                            </a>
-                        </li>
-
-                        <li class="d-flex align-items-center">
-                            <img src="@/assets/img/h5-logo-divided-header.png" alt="">
-                        </li>
-
-                        <li class="d-flex align-items-center">
-                            <a class="text-uppercase text-white text-decoration-none" href="#">
-                                home
-                            </a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <a class="text-uppercase text-white text-decoration-none" href="#">
-                                home
-                            </a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <a class="text-uppercase text-white text-decoration-none" href="#">
-                                home
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <span>home</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            
-            <!-- Link sulla destra  -->
-            <div class="col-3">
-                <ul class="d-flex justify-content-evenly mb-0 p-0">
-                    <li class="d-flex align-items-center">
-                        <a class="text-uppercase text-white text-decoration-none" href="#">
-                            home
-                        </a>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <a class="text-uppercase text-white text-decoration-none" href="#">
-                            home
-                        </a>
-                    </li>
-                </ul>
+
+            <!--//! parte al centro -->
+            <div class="nav-logo col-2 d-flex align-items-center justify-content-center">
+                <img src="@/assets/img/h5-logo-divided-header.png" alt="">
+            </div>
+
+            <div class="nav-right col-5 d-flex align-items-center justify-content-between">
+                <div class="list">
+                    <ul class="d-flex align-items-center mb-0 p-0">
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <span>home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <span>home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <span>home</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="list">
+                    <ul class="d-flex align-items-center mb-0 p-0">
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <img class="header-svg" src="@/assets/svg/svg-1.svg" alt="">
+                                <span>home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-decoration-none text-uppercase text-white" href="#">
+                                <span>home</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </nav>
@@ -109,34 +119,56 @@ export default {
 
 <style lang='scss' scoped>
     
-    nav.container{
+    nav{
         height: 15vh;
-        min-width: 960px;
-        position: sticky;
-        top: 0;
+        width: 1300px;
+        min-width: 960px ;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
         z-index: 2;
+        background-color: rgb(16, 94, 68);
 
         section.row{
-            // height: 100%;
+            height: 100%;
 
             button{
                 font-size: .7rem;
+                text-transform: uppercase;
             }
 
-            li{
-            list-style-type: none;
-
-                a{
-                    font-size: .7rem
-                }
-
-                img{
-                    width: 110px;
-                    vertical-align: middle;
-                    cursor: pointer;
-                }
+            img{
+                width: 130px;
             }
+
+            div.list{
+                height: 100%;
+
+                ul{
+                height: 100%;
+
+                    li{
+                    list-style-type: none;
+                    font-size: .7rem;
+                    padding: 0 1.2rem;
+
+                        img.header-svg{
+                            width: 23px;
+                            fill: #FFFFFF ;
+                        }
+                    }
+                }
+
+            }
+
         }
-    }
+
+        }
+
+        // img{
+            //         width: 110px;
+            //         vertical-align: middle;
+            //         cursor: pointer;
+            //     }
 
 </style>
