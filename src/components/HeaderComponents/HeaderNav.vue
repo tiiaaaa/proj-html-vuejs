@@ -3,7 +3,7 @@
         <section class="row py-2">
             <div class="nav-left col-5 d-flex align-items-center justify-content-between">
                 <div class="button">
-                    <button class="btn btn-danger rounded-0 px-4">Warning</button>
+                    <button class="btn btn-danger rounded-0 px-4">order online</button>
                 </div>
 
                 <div class="list">

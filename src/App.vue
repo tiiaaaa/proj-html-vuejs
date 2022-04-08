@@ -25,6 +25,6 @@ export default {
 @import './assets/style/style.scss';
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 </style>
