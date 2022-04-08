@@ -33,7 +33,7 @@ export default {
             height: 60px;
             width: 60px;
             top: 50%;
-            left: -20px;
+            left: -30px;
             transform: translate(0, -50%);
             transform: rotate(90deg);
             font-size: .7rem;

@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="container-fluid">
         <HeaderNav/>
         <HeaderJumbo/>
     </header>
