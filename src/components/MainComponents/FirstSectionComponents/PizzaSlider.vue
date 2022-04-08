@@ -1,11 +1,9 @@
 <template>
-    <div id="pizza-slider">
-        <section class="row">
-            <div class="col-12">
+    <section class="row">
+        <div id="pizza-slider" class="col-12">
 
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </template>
 
 <script>
