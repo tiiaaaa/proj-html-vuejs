@@ -120,7 +120,7 @@ export default {
 <style lang='scss' scoped>
     
     nav{
-        height: 15vh;
+        height: 20vh;
         width: 1300px;
         min-width: 960px ;
         position: fixed;
@@ -133,12 +133,12 @@ export default {
             height: 100%;
 
             button{
-                font-size: .7rem;
+                font-size: .8rem;
                 text-transform: uppercase;
             }
 
             img{
-                width: 130px;
+                width: 170px;
             }
 
             div.list{
@@ -149,7 +149,7 @@ export default {
 
                     li{
                     list-style-type: none;
-                    font-size: .7rem;
+                    font-size: .8rem;
                     padding: 0 1.2rem;
 
                         img.header-svg{
