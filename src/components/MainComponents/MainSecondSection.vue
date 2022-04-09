@@ -1,6 +1,6 @@
 <template>
     <div id='second-section'>
-        <section class="row py-2">
+        <section class="row">
             <PizzaSpecial/>
             <PizzaMenu/>
         </section>
