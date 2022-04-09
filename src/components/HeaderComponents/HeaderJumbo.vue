@@ -31,6 +31,7 @@ export default {
         background-size: 800px;
         background-position: center;
         background-repeat: no-repeat;
+        overflow-x: hidden;
 
         img{
             width: 400px;
