@@ -26,6 +26,7 @@ export default {
 
 #app {
   font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
 
     // Stilizzazione btn next e prev comune a più components
     div.circle-btn{
