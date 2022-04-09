@@ -5,12 +5,12 @@
             
             <!-- PREV BTN -->
             <div class="circle-btn prev-btn rounded-circle text-danger position-absolute text-uppercase px-4 py-2">
-                <span>p r e v</span>
+                <span>prev</span>
             </div>
             
             <!-- NEXT BTN -->
             <div class="circle-btn next-btn rounded-circle text-danger position-absolute text-uppercase px-4 py-2">
-                <span>n e x t</span>
+                <span>next</span>
             </div>
         </div>
     </section>
@@ -35,32 +35,6 @@ export default {
 
         img{
             width: 400px;
-        }
-
-        div.circle-btn{
-            height: 85px;
-            width: 85px;
-            cursor: pointer;
-            background-color: #f7f7f7;
-
-            span{
-                font-size: .8rem;
-                font-weight: 600;
-            }
-        }
-
-        div.prev-btn{
-            top: 50%;
-            left: -50px;
-            transform: translate(0, -50%);
-            transform: rotate(90deg);
-        }
-
-        div.next-btn{
-            top: 50%;
-            right: -50px;
-            transform: translate(0, -50%);
-            transform: rotate(-90deg);
         }
     }
 

@@ -9,12 +9,22 @@
                 <span class="text-uppercase text-danger">Washington Post 2018</span>
             </div>
 
+            <!-- Contenitore puntini dello slider -->
             <div class="dots-wrapper d-flex mt-4">
                 <div class="dot rounded-circle mx-1"></div>
                 <div class="dot rounded-circle mx-1"></div>
                 <div class="dot rounded-circle mx-1"></div>
             </div>
             
+            <!-- PREV BTN -->
+            <div class="circle-btn prev-btn rounded-circle text-danger position-absolute text-uppercase px-4 py-2">
+                <span>prev</span>
+            </div>
+            
+            <!-- NEXT BTN -->
+            <div class="circle-btn next-btn rounded-circle text-danger position-absolute text-uppercase px-4 py-2">
+                <span>next</span>
+            </div>
         </div>
     </section>
 </template>
@@ -28,12 +38,12 @@ export default {
 
 <style lang='scss' scoped>
     div#pizza-box{
-        height: 60vh;
+        height: 65vh;
         background-image: url('@/assets/img/h3-testimonials-bckgrnd.jpg');
         background-position: center;
         background-size: 2000px;
         background-repeat: no-repeat;
-        background-color: #f7f7f2;
+        background-color: #f6f7f2;
 
         div#pizza-slider{
             width: 900px;
