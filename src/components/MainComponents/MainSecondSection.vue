@@ -1,6 +1,6 @@
 <template>
-    <div id='second-section'>
-        <section class="row">
+    <div id="second-section">
+        <section class="row py-2">
             <PizzaSpecial/>
             <PizzaMenu/>
         </section>
@@ -25,7 +25,7 @@ export default {
 
     div#pizza-special,
     div#pizza-menu{
-        height: 70vh;
+        height: 80vh;
         background-color: aquamarine;
     }
 
