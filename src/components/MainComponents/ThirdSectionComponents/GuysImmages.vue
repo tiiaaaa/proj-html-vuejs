@@ -1,5 +1,5 @@
 <template>
-    <section class="row py-2">
+    <section id="guys-immages" class="row py-2">
         <div class="col-12 col-md-3 p-0">
             <img class="img-fluid" src="@/assets/img/h1-team-1a-700x700.jpg" alt="">
         </div>
@@ -17,13 +17,11 @@
 
 <script>
 export default {
-    name:'GuysImmages.vue',
+    name:'GuysImmages',
 
 }
 </script>
 
 <style lang='scss' scoped>
-
-    
 
 </style>

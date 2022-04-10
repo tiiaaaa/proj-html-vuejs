@@ -49,7 +49,7 @@ export default {
 <style lang='scss' scoped>
 
     section#pizza-brand-list{
-        height: 40vh;
+        height: 43vh;
         background-color: #f7f7f2;
 
         li{
