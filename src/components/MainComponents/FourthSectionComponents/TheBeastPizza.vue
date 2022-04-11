@@ -1,6 +1,6 @@
 <template>
     <section class="row">
-        <div id="the-beast-pizza" class="col-12 position-relative d-flex flex-column align-items-center justify-content-center pt-5">
+        <div id="the-beast-pizza" class="col-12 position-relative d-flex flex-column align-items-center justify-content-center py-5">
             <!-- Box con testo -->
             <div id="pizza-slider" class="text-center">
                 <span class="text-uppercase text-danger">chose your flavour</span>
