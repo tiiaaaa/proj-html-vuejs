@@ -1,7 +1,7 @@
 <template>
     <section id='pizza-deals' class="row">
         <!-- Colonna Sinistra -->
-        <div id="deals-places" class="col-12 col-md-6">
+        <div id="deals-places" class="col-12 col-lg-6">
             <!-- Div che raggruppa le varie voci -->
             <div class="deals-wrapper text-white">
                 <!-- Prima scritta in alto -->
@@ -28,13 +28,11 @@
                         <p class="text-capitalize m-0">{{event.location}}</p>
                     </div>
                 </div>
-                <div></div>
-                <div></div>
             </div>
         </div>
 
         <!-- Colonna Destra -->
-        <div id="deals-immage" class="col-12 col-md-6 p-0">
+        <div id="deals-immage" class="col-12 col-lg-6 p-0">
             <img class="img-fluid" src="@/assets/img/h3-img-5a.jpg" alt="">
         </div>
 
@@ -82,7 +80,7 @@ export default {
 
         div#deals-places{
             padding: 4rem 6rem;
-            background-color: #1c1c1c;
+            background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/footer-img-2.jpg');
 
             div.deals-wrapper{
                 

@@ -24,7 +24,7 @@ export default {
     header{
         min-width: 960px;
         position: relative;
-        background-color: #1b1b1b;
+        background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/footer-img-2.jpg');
     }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="pizza-special" class="col-12 col-md-6 position-relative">
+    <div id="pizza-special" class="col-12 col-lg-6 position-relative">
         <img class="position-absolute" src="@/assets/img/h1-img-7n.png" alt="">
     </div>
 </template>

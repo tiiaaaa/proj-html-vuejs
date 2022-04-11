@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <section class="rowc py-3">
+        <section class="row pt-3">
             <FooterContact/>
             <FooterImmage/>
         </section>
@@ -27,8 +27,7 @@ export default {
 
         div#footer-contact,
         div#footer-immage{
-            height: 80vh;
-            background-color: #1b1b1b;
+            background-image: url('https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/footer-img-2.jpg');
         }
     }
 
