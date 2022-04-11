@@ -1,83 +1,57 @@
 <template>
-    <nav class="container">
-        <section class="row py-2">
-            <div class="nav-left col-5 d-flex align-items-center justify-content-between">
-                <div class="button">
-                    <button class="btn btn-danger rounded-0 px-4">order online</button>
+    <div id="nav-bar">
+        <nav class="container">
+            <section class="row py-2">
+                <div class="nav-left col-5 d-flex align-items-center justify-content-between">
+                    <div class="button">
+                        <button class="btn btn-danger rounded-0 px-4">order online</button>
+                    </div>
+                    
+                    <!-- Lista Sinistra -->
+                    <div class="list">
+                        <ul class="d-flex align-items-center mb-0 p-0">
+                            <li v-for="(element, index) in navFirstList" :key="index">
+                                <img class="header-svg" :src="element.svg" alt="">
+                                <a class="text-decoration-none text-uppercase text-white" href="#">
+                                    <span>{{element.link}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="list">
-                    <ul class="d-flex align-items-center mb-0 p-0">
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <img class="header-svg" src="@/assets/svg/svg-0.svg" alt="">
-                                <span>home</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <span>home</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <span>home</span>
-                            </a>
-                        </li>
-                    </ul>
+                <!--// Logo centrale -->
+                <div class="nav-logo col-2 d-flex align-items-center justify-content-center">
+                    <img src="@/assets/img/h5-logo-divided-header.png" alt="">
                 </div>
-            </div>
-
-            <!--//! parte al centro -->
-            <div class="nav-logo col-2 d-flex align-items-center justify-content-center">
-                <img src="@/assets/img/h5-logo-divided-header.png" alt="">
-            </div>
-
-            <div class="nav-right col-5 d-flex align-items-center justify-content-between">
-                <div class="list">
-                    <ul class="d-flex align-items-center mb-0 p-0">
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <span>home</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <span>home</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <span>home</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
                 
-                <div class="list">
-                    <ul class="d-flex align-items-center mb-0 p-0">
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <img class="header-svg" src="@/assets/svg/svg-1.svg" alt="">
-                                <span>home</span>
-                            </a>
-                        </li>
+                <!-- Prima Lista a destra -->
+                <div class="nav-right col-5 d-flex align-items-center justify-content-between">
+                    <div class="list">
+                        <ul class="d-flex align-items-center mb-0 p-0">
+                            <li v-for="(element, index) in navSecondList" :key="index">
+                                <a class="text-decoration-none text-uppercase text-white" href="#">
+                                    <span>{{element.link}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <li>
-                            <a class="text-decoration-none text-uppercase text-white" href="#">
-                                <span>home</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <!-- Seconda Lista a Destra -->
+                    <div class="list">
+                        <ul class="d-flex align-items-center mb-0 p-0">
+                            <li v-for="(element, index) in navThirdList" :key="index">
+                                <a class="text-decoration-none text-uppercase text-white" href="#">
+                                    <img class="header-svg" :src="element.svg" alt="">
+                                    <span>{{element.link}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </nav>
+            </section>
+        </nav>
+    </div>
 </template>
 
 <script>
@@ -85,9 +59,9 @@ export default {
     name: 'HeaderNav',
     data: function(){
         return{
-            navList: [
+            navFirstList: [
                 {
-                    svg: '@/assets/svg/svg-0.svg',
+                    svg: require('@/assets/svg/svg-0.svg'),
                     link: 'home'
                 },
 
@@ -98,6 +72,9 @@ export default {
                 {
                     link: 'menu'
                 },
+            ],
+
+            navSecondList: [
 
                 {
                     link: 'events'
@@ -110,6 +87,19 @@ export default {
                 {
                     link: 'landing'
                 },
+            ],
+
+            navThirdList: [
+
+                {
+                    svg: require('@/assets/svg/svg-1.svg'),
+                    link: 'cart'
+                },
+
+                {
+                    svg: require('@/assets/svg/svg-0.svg'),
+                    link: 'search'
+                }
             ]
         }
     }
@@ -118,16 +108,19 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-    
-    nav{
-        height: 20vh;
-        width: 1300px;
-        min-width: 960px ;
+
+    div#nav-bar{
+        height: 15vh;
+        width: 100%;
         position: fixed;
         left: 50%;
         transform: translate(-50%);
         z-index: 2;
-        background-color: rgb(16, 94, 68);
+        background-color: #1b1b1b;
+
+        nav{
+        width: 100%;
+        min-width: 960px ;
 
         section.row{
             height: 100%;
@@ -138,7 +131,7 @@ export default {
             }
 
             img{
-                width: 170px;
+                width: 140px;
             }
 
             div.list{
@@ -154,7 +147,8 @@ export default {
 
                         img.header-svg{
                             width: 23px;
-                            fill: #FFFFFF ;
+                            fill: #FFF;
+                            color: #FFF ;
                         }
                     }
                 }
@@ -163,12 +157,7 @@ export default {
 
         }
 
-        }
-
-        // img{
-            //         width: 110px;
-            //         vertical-align: middle;
-            //         cursor: pointer;
-            //     }
+    }
+    }
 
 </style>

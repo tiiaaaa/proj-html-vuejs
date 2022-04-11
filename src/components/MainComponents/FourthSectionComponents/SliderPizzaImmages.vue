@@ -92,7 +92,6 @@ export default {
         div.pizza-card{
             width: 250px;
             height: 55vh;
-            // background-color: rgb(38, 0, 255);
 
             div.pizza-object{
                 height: 100%;

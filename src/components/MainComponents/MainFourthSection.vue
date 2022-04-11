@@ -1,5 +1,5 @@
 <template>
-    <div id="main-fourth-section">
+    <div id="main-fourth-section" class="pb-5">
         <PizzaBrandList/>
         <TheBeastPizza/>
         <SliderPizzaImmages/>

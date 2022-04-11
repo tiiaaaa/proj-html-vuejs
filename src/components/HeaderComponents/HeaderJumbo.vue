@@ -26,7 +26,7 @@ export default {
 <style lang='scss' scoped>
     div#header-jumbo{
         height: 80vh;
-        margin-top: 20vh;
+        margin-top: 15vh;
         background-image: url('@/assets/img/h3-rev-img-5.png');
         background-size: 800px;
         background-position: center;
