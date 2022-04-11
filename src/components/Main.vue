@@ -4,6 +4,7 @@
         <MainSecondSection/>
         <MainThirdSection/>
         <MainFourthSection/>
+        <MainFifthSection/>
     </main>
 </template>
 
@@ -12,6 +13,7 @@ import MainFirstSection from './MainComponents/MainFirstSection.vue';
 import MainSecondSection from './MainComponents/MainSecondSection.vue';
 import MainThirdSection from './MainComponents/MainThirdSection.vue';
 import MainFourthSection from './MainComponents/MainFourthSection.vue';
+import MainFifthSection from './MainComponents/MainFifthSection.vue'; 
 
 export default {
     name: 'IndexMain',
@@ -20,6 +22,7 @@ export default {
         MainSecondSection,
         MainThirdSection,
         MainFourthSection,
+        MainFifthSection,
     }
 
 }

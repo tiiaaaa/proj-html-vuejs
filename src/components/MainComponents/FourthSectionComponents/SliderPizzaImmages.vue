@@ -3,7 +3,7 @@
         <div id="pizza-menu-slider" class="d-flex position-relative p-0">
             <!-- Singola card che racchiude ogni pizza -->
             <div class="pizza-card position-relative" v-for="(card, index) in PizzaCardList" :key="index">
-                <div class="pizza-object p-3">
+                <div class="pizza-object p-4">
                     <!-- immagine della pizza -->
                     <div class="pizza-immage d-flex justify-content-center align-items-center">
                         <a href="#">
@@ -92,7 +92,7 @@ export default {
         div.pizza-card{
             width: 250px;
             height: 55vh;
-            background-color: rgb(38, 0, 255);
+            // background-color: rgb(38, 0, 255);
 
             div.pizza-object{
                 height: 100%;
@@ -111,8 +111,9 @@ export default {
             }
 
             div.pizza-btns{
-                width: 250px;
-                bottom: 0;
+                width: 100%;
+                bottom: 30px;
+                display: none;
                 
                 button.function-btn{
                     width: 50%;
@@ -122,6 +123,11 @@ export default {
                     }
                 }
             }
+        }
+
+        div.pizza-card:hover div.pizza-btns{
+            display: block;
+            
         }
     }
 
