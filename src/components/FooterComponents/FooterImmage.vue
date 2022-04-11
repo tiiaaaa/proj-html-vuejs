@@ -1,5 +1,5 @@
 <template>
-    <div id="footer-immage" class="col-12 col-md-6">
+    <div id="footer-immage" class="col-12 col-lg-6">
 
     </div>
 </template>
