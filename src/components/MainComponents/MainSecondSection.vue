@@ -23,10 +23,4 @@ export default {
 
 <style lang='scss'>
 
-    div#pizza-special,
-    div#pizza-menu{
-        height: 80vh;
-        background-color: aquamarine;
-    }
-
 </style>
